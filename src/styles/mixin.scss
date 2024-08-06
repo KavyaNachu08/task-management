@@ -1,0 +1,22 @@
+@mixin font(
+  $font-family: sans-serif,
+  $font-color: null,
+  $font-size: null,
+  $font-weight: null,
+  $font-style: null
+) {
+  font-family: $font-family;
+  color: $font-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+@mixin flex($direction: null, $justify-content: null, $align-items: null, $flex-wrap: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+  }
+

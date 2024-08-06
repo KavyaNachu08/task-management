@@ -1,0 +1,78 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.task-container {
+    width:90%;
+    margin:auto;
+    padding: 100px 0;
+}
+
+.filters {
+  @include flex( $flex-wrap:wrap);
+
+ &__search {
+    @include flex($align-items:center);
+    margin: 20px;
+
+    &__label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+
+    &__input {
+      width: 200px;
+      font-size: 16px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 5px 5px 25px $blue;
+      outline:none;
+    }
+}
+
+}
+
+.task {
+    margin-top: 30px;
+    overflow-x: scroll;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px $blue;
+
+  .table-header {
+    background-color: $blue;
+    color:$white;
+
+    &.hover{
+        background-color: $blue;
+    }
+  }
+
+  &__title-list {
+    display:grid;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: $grey;
+
+    &__listitem {
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 600;
+      padding: 0 30px;
+      width:100%;
+      margin:auto;
+    }
+  }
+}
+
+.task::-webkit-scrollbar {
+    display:none;
+}
+
+@media (max-width:870px) {
+  .task__title-list {
+    max-width: 870px;
+    width: max-content;
+  }
+}

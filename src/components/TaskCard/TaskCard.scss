@@ -1,0 +1,32 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.task__title-list {
+  padding: 15px 0;
+  background-color: $grey;
+
+  &__listitem {
+    padding: 0 30px;
+
+    .task-button {
+      font-size: 20px;
+      padding: 10px 15px;
+      margin: 15px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+
+      &.delete {
+        background-color: $red2;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+}
+
+
+
+

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.task-header {
+    background-color: $white;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 0px 0px 25px $blue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height:80px;
+    margin:auto;
+    // position: fixed;
+    // top:0;
+    // z-index: 2;
+    width:100%;
+}
